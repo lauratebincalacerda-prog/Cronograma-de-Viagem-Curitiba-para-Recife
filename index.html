@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronograma de Viagem - Curitiba para Recife</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chart.js para renderização do gráfico -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Cronograma de Viagem: Curitiba ✈️ Recife</h1>
+    
+    <div class="content">
+      <!-- Tabela de Dados -->
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Categoria</th>
+              <th>Preço Unitário</th>
+              <th>Qtd</th>
+              <th>Valor Final</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Passagem de avião</td>
+              <td>R$ 1.300,00</td>
+              <td>1</td>
+              <td>R$ 1.300,00</td>
+            </tr>
+            <tr>
+              <td>Hospedagem</td>
+              <td>R$ 200,00</td>
+              <td>5</td>
+              <td>R$ 1.000,00</td>
+            </tr>
+            <tr>
+              <td>Alimentação</td>
+              <td>R$ 100,00</td>
+              <td>5</td>
+              <td>R$ 500,00</td>
+            </tr>
+            <tr>
+              <td>Transporte</td>
+              <td>R$ 50,00</td>
+              <td>3</td>
+              <td>R$ 150,00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"><strong>Total</strong></td>
+              <td><strong>R$ 2.950,00</strong></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+      <!-- Gráfico de Pizza -->
+      <div class="chart-container">
+        <canvas id="graficoPizza"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
